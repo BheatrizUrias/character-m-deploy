@@ -17,7 +17,7 @@ export async function populateSpeciesSection(currentCharacter) {
   select.innerHTML = '<option value="" disabled selected>Selecione sua Raça:</option>';
 
   try {
-    const response = await fetch('./Data/species.json');
+    const response = await fetch('./data/species.json');
     const speciesList = await response.json();
 
     speciesList.forEach(species => {
