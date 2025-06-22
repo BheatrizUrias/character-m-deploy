@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Character Manager</title>
+  <link rel="stylesheet" href="./Design/style.css" />
+  <link rel="icon" href="assets/CMIcon.svg" type="image/x-icon" />
+  <script type="module" src="./scripts/saved_characters.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>Character Manager</h1>
+
+</header>
+
+  
+  <main>
+    <div class="characters-table-container">
+      <h1>Personagens Salvos</h1>
+      <table class="characters-table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Raça</th>
+            <th>Classe</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="characters-list">
+          <!-- Os personagens serão inseridos aqui via JavaScript -->
+          <tr class="no-characters">
+            <td colspan="4">Nenhum personagem salvo ainda.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
