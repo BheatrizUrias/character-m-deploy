@@ -143,10 +143,10 @@ export async function populateClassSection(currentCharacter) {
   select.innerHTML = '<option value="" disabled selected>Selecione sua Classe</option>';
 
   try {
-    const classResponse = await fetch('./Data/class.json');
+    const classResponse = await fetch('./data/class.json');
     const classes = await classResponse.json();
 
-    const equipResponse = await fetch('./Data/equipments.json');
+    const equipResponse = await fetch('./data/equipments.json');
     const equipmentsData = await equipResponse.json();
     const allEquipments = equipmentsData[0];
 
