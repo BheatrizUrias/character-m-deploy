@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "name": "Acólito",
+    "description": "Você passou sua vida servindo em um templo, realizando rituais sagrados e oferecendo sacrifícios.",
+    "skills": ["Intuição", "Religião"],
+    "tool_proficiencies": [],
+    "languages": 2,
+    "equipment": [
+      "Símbolo sagrado",
+      "Livro de orações",
+      "5 varetas de incenso",
+      "Vestes",
+      "Conjunto de roupas comuns",
+      "15 PO"
+    ],
+    "feature": "Acesso a templos e assistência da fé",
+    "ability_score_increase": {
+      "Sabedoria": 1,
+      "Carisma": 1
+    },
+    "origin_feat": "Iniciado Religioso"
+  },
+  {
+    "id": 2,
+    "name": "Artesão",
+    "description": "Você foi um artesão habilidoso, criando itens de qualidade em uma oficina.",
+    "skills": ["Intuição", "Persuasão"],
+    "tool_proficiencies": ["Ferramentas de artesão (uma à sua escolha)"],
+    "languages": 1,
+    "equipment": [
+      "Ferramentas de artesão (escolhidas)",
+      "Um item de qualidade feito por você",
+      "Roupas de viajante",
+      "15 PO"
+    ],
+    "feature": "Respeito dos Colegas Artesãos",
+    "ability_score_increase": {
+      "Inteligência": 1,
+      "Destreza": 1
+    },
+    "origin_feat": "Trabalho Manual"
+  },
+  {
+    "id": 3,
+    "name": "Artista",
+    "description": "Você era um artista itinerante, entretendo plateias com música, teatro ou outras formas de arte.",
+    "skills": ["Acrobacia", "Atuação"],
+    "tool_proficiencies": ["Um instrumento musical à sua escolha"],
+    "languages": 0,
+    "equipment": [
+      "Instrumento musical (escolhido)",
+      "Um presente de um admirador",
+      "Traje de apresentação",
+      "25 PO"
+    ],
+    "feature": "Popularidade Local",
+    "ability_score_increase": {
+      "Carisma": 2
+    },
+    "origin_feat": "Talento Artístico"
+  },
+  {
+    "id": 4,
+    "name": "Charlatão",
+    "description": "Você sempre teve um jeito para manipular pessoas e se passar por outros.",
+    "skills": ["Enganação", "Prestidigitação"],
+    "tool_proficiencies": ["Kit de disfarces", "Ferramentas de falsificação"],
+    "languages": 0,
+    "equipment": [
+      "Roupas finas",
+      "Kit de disfarces",
+      "Ferramentas de falsificação",
+      "10 PO"
+    ],
+    "feature": "Falso Identidade",
+    "ability_score_increase": {
+      "Carisma": 1,
+      "Destreza": 1
+    },
+    "origin_feat": "Mestre da Mentira"
+  },
+  {
+    "id": 5,
+    "name": "Criminoso",
+    "description": "Você já fez parte do submundo do crime, seja como ladrão, assassino ou contrabandista.",
+    "skills": ["Enganação", "Furtividade"],
+    "tool_proficiencies": ["Ferramentas de ladrão", "Jogo de azar"],
+    "languages": 0,
+    "equipment": [
+      "Pé de cabra",
+      "Roupas escuras e capuz",
+      "15 PO"
+    ],
+    "feature": "Contato Criminoso",
+    "ability_score_increase": {
+      "Destreza": 1,
+      "Inteligência": 1
+    },
+    "origin_feat": "Passado Sombrio"
+  },
+  {
+    "id": 6,
+    "name": "Eremita",
+    "description": "Você viveu isolado, seja em um mosteiro, floresta ou outro local remoto, buscando conhecimento espiritual.",
+    "skills": ["Medicina", "Religião"],
+    "tool_proficiencies": ["Kit de herbalismo"],
+    "languages": 1,
+    "equipment": [
+      "Cobertor de inverno",
+      "Kit de herbalismo",
+      "5 PO"
+    ],
+    "feature": "Descoberta",
+    "ability_score_increase": {
+      "Sabedoria": 2
+    },
+    "origin_feat": "Iluminação Espiritual"
+  },
+  {
+    "id": 7,
+    "name": "Forasteiro",
+    "description": "Você cresceu longe da civilização, vivendo entre animais selvagens ou tribos isoladas.",
+    "skills": ["Atletismo", "Sobrevivência"],
+    "tool_proficiencies": ["Um instrumento musical à sua escolha"],
+    "languages": 1,
+    "equipment": [
+      "Arma de caça",
+      "Pele de animal",
+      "10 PO"
+    ],
+    "feature": "Origem Selvagem",
+    "ability_score_increase": {
+      "Força": 1,
+      "Constituição": 1
+    },
+    "origin_feat": "Resistência Natural"
+  },
+  {
+    "id": 8,
+    "name": "Herói do Povo",
+    "description": "Você era um fazendeiro ou trabalhador comum que se tornou herói ao realizar um feito extraordinário.",
+    "skills": ["Adestrar Animais", "Sobrevivência"],
+    "tool_proficiencies": ["Ferramentas de artesão (uma à sua escolha)", "Veículos (terrestres)"],
+    "languages": 0,
+    "equipment": [
+      "Ferramentas de artesão (escolhidas)",
+      "Pá",
+      "Panela de ferro",
+      "10 PO"
+    ],
+    "feature": "Reconhecimento Local",
+    "ability_score_increase": {
+      "Força": 1,
+      "Constituição": 1
+    },
+    "origin_feat": "Determinação Inabalável"
+  },
+  {
+    "id": 9,
+    "name": "Marinheiro",
+    "description": "Você passou anos navegando em navios mercantes ou de guerra, enfrentando tempestades e monstros marinhos.",
+    "skills": ["Atletismo", "Percepção"],
+    "tool_proficiencies": ["Ferramentas de navegador", "Veículos (aquáticos)"],
+    "languages": 0,
+    "equipment": [
+      "Pique",
+      "Corda de seda (15 metros)",
+      "Amuleto da sorte",
+      "10 PO"
+    ],
+    "feature": "Passagem de Navio",
+    "ability_score_increase": {
+      "Força": 1,
+      "Sabedoria": 1
+    },
+    "origin_feat": "Pés Firmes"
+  },
+  {
+    "id": 10,
+    "name": "Nobre",
+    "description": "Você nasceu em uma família nobre, cercado de luxo e influência política.",
+    "skills": ["História", "Persuasão"],
+    "tool_proficiencies": ["Um jogo de tabuleiro"],
+    "languages": 1,
+    "equipment": [
+      "Roupas finas",
+      "Selo de família",
+      "25 PO"
+    ],
+    "feature": "Privilégio Nobre",
+    "ability_score_increase": {
+      "Carisma": 1,
+      "Inteligência": 1
+    },
+    "origin_feat": "Educação Aristocrática"
+  },
+  {
+    "id": 11,
+    "name": "Órfão",
+    "description": "Você cresceu nas ruas, sem família, sobrevivendo com astúcia e esperteza.",
+    "skills": ["Furtividade", "Prestidigitação"],
+    "tool_proficiencies": ["Ferramentas de ladrão", "Kit de disfarces"],
+    "languages": 0,
+    "equipment": [
+      "Pequena faca",
+      "Mapa da cidade",
+      "10 PO"
+    ],
+    "feature": "Esconderijo Secreto",
+    "ability_score_increase": {
+      "Destreza": 1,
+      "Sabedoria": 1
+    },
+    "origin_feat": "Sobrevivente Urbano"
+  },
+  {
+    "id": 12,
+    "name": "Sábio",
+    "description": "Você dedicou sua vida ao estudo de livros e manuscritos antigos, buscando conhecimento arcano ou histórico.",
+    "skills": ["Arcanismo", "História"],
+    "tool_proficiencies": [],
+    "languages": 2,
+    "equipment": [
+      "Pena e tinta",
+      "Livro sobre um assunto de seu interesse",
+      "10 PO"
+    ],
+    "feature": "Acesso a Bibliotecas",
+    "ability_score_increase": {
+      "Inteligência": 2
+    },
+    "origin_feat": "Mente Analítica"
+  },
+  {
+    "id": 13,
+    "name": "Soldado",
+    "description": "Você serviu em um exército ou milícia, participando de batalhas e campanhas militares.",
+    "skills": ["Atletismo", "Intimidação"],
+    "tool_proficiencies": ["Um tipo de jogo de guerra", "Veículos (terrestres)"],
+    "languages": 0,
+    "equipment": [
+      "Insígnia militar",
+      "Troféu de guerra",
+      "10 PO"
+    ],
+    "feature": "Patente Militar",
+    "ability_score_increase": {
+      "Força": 1,
+      "Constituição": 1
+    },
+    "origin_feat": "Treinamento Marcial"
+  }
+]

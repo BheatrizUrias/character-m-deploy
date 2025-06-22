@@ -1,0 +1,507 @@
+[
+  {
+    "id": 1,
+    "name": "Anão",
+    "description": "Audazes e resistentes, os anões são conhecidos como hábeis guerreiros, mineradores e trabalhadores em pedra e metal. Embora tenham menos de 1,50 metro de altura, os anões são tão largos e compactos que podem pesar tanto quanto um humano 60 centímetros mais alto. Sua coragem e resistência compete facilmente com qualquer povo mais alto.",
+    "ability_bonus": [
+      {
+        "ability_name": "constitution",
+        "bonus": 2
+      }
+    ],
+    "size": "Médio (Entre 1,20m e 1,50m)",
+    "speed": 7.5,
+    "languages": [
+      "Comum",
+      "Anão"
+    ],
+    "traits": [
+      {
+        "trait_name": "Aumento de Habilidade",
+        "trait_description": " Seu valor de Constituição aumenta em 2."
+      },
+      {
+        "trait_name": "Visão no Escuro",
+        "trait_description": "Acostumado à vida subterrânea, você possui visão no escuro em até 18 metros."
+      },
+      {
+        "trait_name": "Resiliência Anã",
+        "trait_description": "Você possui vantagem em testes de resistência contra veneno e resistência contra dano de veneno."
+      },
+      {
+        "trait_name": "Treinamento Anão em Combate",
+        "trait_description": "Você tem proficiência com machados de batalha, machadinhas, martelos leves e martelos de guerra."
+      },
+      {
+        "trait_name": "Proficiência com Ferramentas",
+        "trait_description": " Você tem proficiência em uma ferramenta de artesão à sua escolha entre: ferramentas de ferreiro, suprimentos de cervejeiro ou ferramentas de pedreiro."
+      },
+      {
+        "trait_name": "Especialização em Rochas",
+        "trait_description": "Sempre que você realizar um teste de Inteligência (História) relacionado à origem de um trabalho em pedra, você é considerado proficiente na perícia História e adiciona o dobro do seu bônus de proficiência ao teste, ao invés do seu bônus de proficiência normal."
+      }
+    ],
+    "subraces": [
+      {
+        "id": 1,
+        "subrace_name": "Anão da Colina",
+        "subrace_description": "Como um anão da colina, você tem sentidos aguçados, maior intuição e notável resiliência",
+        "ability_bonus": [
+          {
+            "ability_name": "wisdom",
+            "bonus": 1
+          }
+        ],
+        "subrace_trait": [
+          {
+            "trait_name": "Tenacidade Anã",
+            "trait_description": "Aumenta seus pontos de vida em 1 ponto adicional no 1º nível, e 1 ponto adicional sempre que subir de nível."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "subrace_name": "Anão da Montanha",
+        "subrace_description": "Como um anão da montanha, você é forte e resistente, acostumados a uma vida difícil em terrenos difíceis.Você, provavelmente tem a descendência daqueles mais altos (para um anão) e tende a possuir uma coloração mais clara.",
+        "ability_bonus": [
+          {
+            "ability_name": "strength",
+            "bonus": 2
+          }
+        ],
+        "subrace_trait": [
+          {
+            "trait_name": "Treinamento Anão com Armaduras",
+            "trait_description": "Você adquire proficiência em armaduras leves e médias. "
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Elfo",
+    "description": "Elfos são conhecidos por sua graça, longevidade e afinidade com a magia. Vivem por séculos e possuem uma conexão profunda com a natureza e o mundo mágico.",
+    "ability_bonus": [
+      {
+        "ability_name": "dexterity",
+        "bonus": 2
+      }
+    ],
+    "size": "Médio (Entre 1,50m e 1,80m)",
+    "speed": 9,
+    "languages": [
+      "Comum",
+      "Élfico"
+    ],
+    "traits": [
+      {
+        "trait_name": "Visão no Escuro",
+        "trait_description": "Acostumado à escuridão, você possui visão no escuro em até 18 metros."
+      },
+      {
+        "trait_name": "Sentidos Aguçados",
+        "trait_description": "Você tem proficiência na perícia Percepção."
+      },
+      {
+        "trait_name": "Ancestralidade Feérica",
+        "trait_description": "Você tem vantagem em testes de resistência contra ser enfeitiçado e magia não pode colocá-lo para dormir."
+      },
+      {
+        "trait_name": "Transe",
+        "trait_description": "Elfos não precisam dormir. Em vez disso, meditam profundamente por 4 horas por dia."
+      }
+    ],
+    "subraces": [
+      {
+        "id": 1,
+        "subrace_name": "Elfo da Floresta",
+        "subrace_description": "Elfos da floresta são reclusos e conectados à natureza, movendo-se rapidamente e com discrição.",
+        "ability_bonus": [
+          {
+            "ability_name": "wisdom",
+            "bonus": 1
+          }
+        ],
+        "subrace_trait": [
+          {
+            "trait_name": "Máscara da Natureza",
+            "trait_description": "Você pode tentar se esconder mesmo quando está apenas levemente obscurecido por folhagem, chuva forte, neve caindo, névoa ou outros fenômenos naturais."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "subrace_name": "Alto Elfo",
+        "subrace_description": "Altos elfos são conhecidos por sua inteligência e domínio da magia.",
+        "ability_bonus": [
+          {
+            "ability_name": "intelligence",
+            "bonus": 1
+          }
+        ],
+        "subrace_trait": [
+          {
+            "trait_name": "Treinamento em Magia",
+            "trait_description": "Você conhece um truque à sua escolha da lista de magias de mago. Inteligência é sua habilidade para conjurá-lo."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "subrace_name": "Elfo Negro (Drow)",
+        "subrace_description": "Drows são elfos que vivem no subterrâneo, conhecidos por sua pele escura e afinidade com a magia sombria.",
+        "ability_bonus": [
+          {
+            "ability_name": "charisma",
+            "bonus": 1
+          }
+        ],
+        "subrace_trait": [
+          {
+            "trait_name": "Magia Drow",
+            "trait_description": "Você conhece o truque Luzes Dançantes. No 3º nível, você pode conjurar Fogo das Fadas uma vez por dia. No 5º nível, você pode conjurar Escuridão uma vez por dia. Carisma é sua habilidade para essas magias."
+          },
+          {
+            "trait_name": "Sensibilidade à Luz Solar",
+            "trait_description": "Você tem desvantagem em jogadas de ataque e testes de Percepção baseados em visão quando você, o alvo de seu ataque ou o que você está tentando perceber estão sob luz solar direta."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Halfling",
+    "description": "Halflings são pequenos e ágeis, conhecidos por sua sorte e natureza amigável. Vivem em comunidades pacíficas e são conhecidos por sua coragem inesperada.",
+    "ability_bonus": [
+      {
+        "ability_name": "dexterity",
+        "bonus": 2
+      }
+    ],
+    "size": "Pequeno (cerca de 0,90m)",
+    "speed": 7.5,
+    "languages": [
+      "Comum",
+      "Halfling"
+    ],
+    "traits": [
+      {
+        "trait_name": "Sorte",
+        "trait_description": "Quando você rolar um 1 em um teste de ataque, teste de habilidade ou teste de resistência, você pode rerrolar o dado e deve usar o novo resultado."
+      },
+      {
+        "trait_name": "Bravura",
+        "trait_description": "Você tem vantagem em testes de resistência contra ficar amedrontado."
+      },
+      {
+        "trait_name": "Agilidade Halfling",
+        "trait_description": "Você pode se mover através do espaço de qualquer criatura que seja de um tamanho maior que o seu."
+      }
+    ],
+    "subraces": [
+      {
+        "id": 1,
+        "subrace_name": "Pés Leves",
+        "subrace_description": "Halflings Pés Leves são mais sociáveis e capazes de se esconder facilmente.",
+        "ability_bonus": [
+          {
+            "ability_name": "charisma",
+            "bonus": 1
+          }
+        ],
+        "subrace_trait": [
+          {
+            "trait_name": "Furtividade Natural",
+            "trait_description": "Você pode tentar se esconder mesmo quando estiver apenas levemente obscurecido por uma criatura que seja pelo menos um tamanho maior que você."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "subrace_name": "Robusto",
+        "subrace_description": "Halflings Robustos são mais resistentes e têm uma constituição mais forte.",
+        "ability_bonus": [
+          {
+            "ability_name": "constitution",
+            "bonus": 1
+          }
+        ],
+        "subrace_trait": [
+          {
+            "trait_name": "Resiliência Robusta",
+            "trait_description": "Você tem vantagem em testes de resistência contra veneno e resistência contra dano de veneno."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Humano",
+    "description": "Humanos são a raça mais versátil e ambiciosa. Suas sociedades são variadas e adaptáveis, com talentos diversos e uma grande capacidade de adaptação.",
+    "ability_bonus": [
+      {
+        "ability_name": "strength",
+        "bonus": 1
+      },
+      {
+        "ability_name": "dexterity",
+        "bonus": 1
+      },
+      {
+        "ability_name": "constitution",
+        "bonus": 1
+      },
+      {
+        "ability_name": "intelligence",
+        "bonus": 1
+      },
+      {
+        "ability_name": "wisdom",
+        "bonus": 1
+      },
+      {
+        "ability_name": "charisma",
+        "bonus": 1
+      }
+    ],
+    "size": "Médio (Entre 1,50m e 1,90m)",
+    "speed": 9,
+    "languages": [
+      "Comum",
+      "Um idioma adicional à sua escolha"
+    ],
+    "traits": [
+      {
+        "trait_name": "Versatilidade Humana",
+        "trait_description": "Você recebe +1 em todos os valores de habilidade."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Draconato",
+    "description": "Descendentes de dragões, os draconatos caminham orgulhosamente por um mundo que os receia. Forjados por um clã ou por um propósito superior, são conhecidos por sua força, presença e sopro dracônico.",
+    "ability_bonus": [
+      {
+        "ability_name": "strength",
+        "bonus": 2
+      },
+      {
+        "ability_name": "charisma",
+        "bonus": 1
+      }
+    ],
+    "size": "Médio (Entre 1,80m e 2,10m)",
+    "speed": 9,
+    "languages": [
+      "Comum",
+      "Dracônico"
+    ],
+    "traits": [
+      {
+        "trait_name": "Ancestral Dracônico",
+        "trait_description": "Você tem uma linhagem dracônica que determina o tipo de dano do seu sopro e resistência. Escolha um tipo de dragão da tabela de ancestrais dracônicos."
+      },
+      {
+        "trait_name": "Arma de Sopro",
+        "trait_description": "Você pode usar sua ação para exalar energia destrutiva. A forma e o tipo de dano dependem do seu ancestral dracônico. Criaturas afetadas devem fazer um teste de resistência (CD = 8 + seu modificador de Constituição + bônus de proficiência) ou sofrer dano (2d6, aumentando com os níveis)."
+      },
+      {
+        "trait_name": "Resistência ao Dano",
+        "trait_description": "Você tem resistência ao tipo de dano associado ao seu ancestral dracônico."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Gnomo",
+    "description": "Gnomos são criaturas pequenas, curiosas e inteligentes. Seu amor pela invenção, engenhocas e pela magia os torna singulares entre as raças. Apesar do tamanho, possuem um espírito vibrante e energético.",
+    "ability_bonus": [
+      {
+        "ability_name": "intelligence",
+        "bonus": 2
+      }
+    ],
+    "size": "Pequeno (cerca de 0,90m a 1,20m)",
+    "speed": 7.5,
+    "languages": [
+      "Comum",
+      "Gnômico"
+    ],
+    "traits": [
+      {
+        "trait_name": "Visão no Escuro",
+        "trait_description": "Acostumado à vida subterrânea, você possui visão no escuro em até 18 metros."
+      },
+      {
+        "trait_name": "Esperteza Gnômica",
+        "trait_description": "Você tem vantagem em todos os testes de resistência de Inteligência, Sabedoria e Carisma contra magia."
+      }
+    ],
+    "subraces": [
+      {
+        "id": 1,
+        "subrace_name": "Gnomo da Floresta",
+        "subrace_description": "Gnomos da floresta são sorrateiros e têm uma conexão natural com os animais e a magia.",
+        "ability_bonus": [
+          {
+            "ability_name": "dexterity",
+            "bonus": 1
+          }
+        ],
+        "subrace_trait": [
+          {
+            "trait_name": "Ilusionista Nato",
+            "trait_description": "Você conhece o truque Ilusão Menor. Inteligência é sua habilidade para conjurá-lo."
+          },
+          {
+            "trait_name": "Falar com Animais da Floresta",
+            "trait_description": "Você pode comunicar ideias simples com pequenas ou médias bestas através de sons e gestos."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "subrace_name": "Gnomo das Rochas",
+        "subrace_description": "Gnomos das rochas são inventores, tinkerers e altamente engenhosos.",
+        "ability_bonus": [
+          {
+            "ability_name": "constitution",
+            "bonus": 1
+          }
+        ],
+        "subrace_trait": [
+          {
+            "trait_name": "Conhecimento de Artífice",
+            "trait_description": "Sempre que fizer um teste de Inteligência (História) relacionado a itens mágicos, objetos alquímicos ou engenhocas tecnológicas, você pode adicionar o dobro do seu bônus de proficiência."
+          },
+          {
+            "trait_name": "Engenhocas de Tinker",
+            "trait_description": "Você possui ferramentas de tinker e pode criar pequenos dispositivos mecânicos com efeitos simples, como brinquedos ou dispositivos de som/luz."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Meio-Elfo",
+    "description": "Meio-elfos herdam o carisma e a graça dos elfos, combinados com a versatilidade e ambição humana. Muitas vezes, são vistos como forasteiros, mas também como pontes entre culturas.",
+    "ability_bonus": [
+      {
+        "ability_name": "charisma",
+        "bonus": 2
+      },
+      {
+        "ability_name": "à escolha",
+        "bonus": 1
+      },
+      {
+        "ability_name": "à escolha",
+        "bonus": 1
+      }
+    ],
+    "size": "Médio (Entre 1,50m e 1,90m)",
+    "speed": 9,
+    "languages": [
+      "Comum",
+      "Élfico",
+      "Um idioma adicional à sua escolha"
+    ],
+    "traits": [
+      {
+        "trait_name": "Versatilidade em Habilidades",
+        "trait_description": "Você aumenta dois outros valores de habilidade à sua escolha em 1 ponto cada."
+      },
+      {
+        "trait_name": "Ancestralidade Feérica",
+        "trait_description": "Você tem vantagem em testes de resistência contra ser enfeitiçado, e magia não pode colocá-lo para dormir."
+      },
+      {
+        "trait_name": "Visão no Escuro",
+        "trait_description": "Você pode enxergar na penumbra a até 18 metros como se fosse luz plena, e na escuridão como se fosse penumbra."
+      },
+      {
+        "trait_name": "Versatilidade em Perícias",
+        "trait_description": "Você ganha proficiência em duas perícias à sua escolha."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Meio-Orc",
+    "description": "Nascidos entre humanos e orcs, os meio-orcs herdam a força bruta e a ferocidade de seus ancestrais orcs, combinadas com a adaptabilidade humana. São temidos por sua presença intimidadora e instinto de sobrevivência.",
+    "ability_bonus": [
+      {
+        "ability_name": "strength",
+        "bonus": 2
+      },
+      {
+        "ability_name": "constitution",
+        "bonus": 1
+      }
+    ],
+    "size": "Médio (Entre 1,80m e 2,10m)",
+    "speed": 9,
+    "languages": [
+      "Comum",
+      "Orc"
+    ],
+    "traits": [
+      {
+        "trait_name": "Visão no Escuro",
+        "trait_description": "Você pode enxergar na penumbra a até 18 metros como se fosse luz plena, e na escuridão como se fosse penumbra."
+      },
+      {
+        "trait_name": "Ameaçador",
+        "trait_description": "Você tem proficiência na perícia Intimidação."
+      },
+      {
+        "trait_name": "Resistência Implacável",
+        "trait_description": "Quando você é reduzido a 0 pontos de vida, mas não é morto instantaneamente, você pode cair para 1 ponto de vida em vez disso. Você só pode usar esse traço uma vez por descanso longo."
+      },
+      {
+        "trait_name": "Ataques Selvagens",
+        "trait_description": "Quando você acerta um ataque crítico com uma arma corpo a corpo, você pode rolar um dos dados de dano adicionais da arma mais uma vez e adicioná-lo ao dano extra do acerto crítico."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Tiefling",
+    "description": "Descendentes de pactos infernais, os tieflings carregam o sangue de demônios ou diabos em suas veias. Sua aparência distinta — com chifres, cauda e olhos incomuns — reflete seu legado infernal, assim como suas habilidades mágicas naturais.",
+    "ability_bonus": [
+      {
+        "ability_name": "charisma",
+        "bonus": 2
+      },
+      {
+        "ability_name": "intelligence",
+        "bonus": 1
+      }
+    ],
+    "size": "Médio (Entre 1,50m e 1,90m)",
+    "speed": 9,
+    "languages": [
+      "Comum",
+      "Infernal"
+    ],
+    "traits": [
+      {
+        "trait_name": "Visão no Escuro",
+        "trait_description": "Acostumado à escuridão, você pode enxergar na penumbra a até 18 metros como se fosse luz plena, e na escuridão como se fosse penumbra."
+      },
+      {
+        "trait_name": "Resistência Infernal",
+        "trait_description": "Você possui resistência a dano de fogo."
+      },
+      {
+        "trait_name": "Legado Infernal",
+        "trait_description": "Você conhece o truque Taumaturgia. Ao alcançar o 3º nível, pode conjurar *Repreensão Infernal* uma vez por descanso longo. Ao atingir o 5º nível, pode conjurar *Escuridão* uma vez por descanso longo. Carisma é sua habilidade de conjuração para essas magias."
+      }
+    ]
+  }
+]
