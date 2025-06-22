@@ -1,28 +1,28 @@
 /* Carregando Fontes */
 @font-face {
   font-family: 'KCobraLetraBold';
-  src: url('./Fonts/KCOBRALETRABOLD.TTF') format('truetype');
+  src: url('./fonts/KCOBRALETRABOLD.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'KCobraLetra';
-  src: url('./Fonts/KCOBRALETRAREGULAR.TTF') format('truetype');
+  src: url('./fonts/KCOBRALETRAREGULAR.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('./Fonts/Inter-VariableFont_opsz_wght.ttf') format('truetype');
+  src: url('./fonts/Inter-VariableFont_opsz_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Inter_Italic';
-  src: url('./Fonts/Inter-Italic-VariableFont_opsz_wght.ttf') format('truetype');
+  src: url('./fonts/Inter-Italic-VariableFont_opsz_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
