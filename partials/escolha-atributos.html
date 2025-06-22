@@ -1,0 +1,117 @@
+<div class="selection-section">
+  <div class="section-description">
+    <div class="section-intro">
+      Distribua os pontos de atributo para moldar as forças e fraquezas do seu personagem. Cada escolha impacta diretamente suas ações e habilidades no jogo.
+    </div>
+
+    <select id="distribution-select" class="method-select">
+      <option value="" disabled selected>Selecione o método de distribuição</option>
+      <option value="standard">Matriz Padrão (15, 14, 13, 12, 10, 8)</option>
+      <option value="pointbuy">Compra por Pontos (27 pontos)</option>
+      <option value="rolling">Rolagem de Dados (4d6 descarta menor)</option>
+    </select>
+  </div>
+
+
+  <div id="pointbuy-info" style="display: none; margin-top: 10px;">
+    Pontos restantes: <span id="points-remaining">27</span>
+  </div>
+
+  <div class="attributes-grid">
+    <!-- Força -->
+    <div class="attribute-card" data-attribute="strength">
+      <div class="attribute-header" style="background-color: #DB5252;">
+        <span>Força</span>
+      </div>
+      <select class="attribute-base-select">
+        <option value="" disabled selected></option>
+      </select>
+      <table class="attribute-values">
+        <tr><td>Base:</td><td class="value-base">0</td></tr>
+        <tr><td>Bônus:</td><td class="value-bonus">0</td></tr>
+        <tr><td>Total:</td><td class="value-total">0</td></tr>
+        <tr><td>Modificador:</td><td class="value-modifier">0</td></tr>
+      </table>
+    </div>
+
+    <!-- Destreza -->
+    <div class="attribute-card" data-attribute="dexterity">
+      <div class="attribute-header" style="background-color: #62CF72;">
+        <span>Destreza</span>
+      </div>
+      <select class="attribute-base-select">
+        <option value="" disabled selected></option>
+      </select>
+      <table class="attribute-values">
+        <tr><td>Base:</td><td class="value-base">0</td></tr>
+        <tr><td>Bônus:</td><td class="value-bonus">0</td></tr>
+        <tr><td>Total:</td><td class="value-total">0</td></tr>
+        <tr><td>Modificador:</td><td class="value-modifier">0</td></tr>
+      </table>
+    </div>
+
+    <!-- Constituição -->
+    <div class="attribute-card" data-attribute="constitution">
+      <div class="attribute-header" style="background-color: #F2623F;">
+        <span>Constituição</span>
+      </div>
+      <select class="attribute-base-select">
+        <option value="" disabled selected></option>
+      </select>
+      <table class="attribute-values">
+        <tr><td>Base:</td><td class="value-base">0</td></tr>
+        <tr><td>Bônus:</td><td class="value-bonus">0</td></tr>
+        <tr><td>Total:</td><td class="value-total">0</td></tr>
+        <tr><td>Modificador:</td><td class="value-modifier">0</td></tr>
+      </table>
+    </div>
+
+    <!-- Inteligência -->
+    <div class="attribute-card" data-attribute="intelligence">
+      <div class="attribute-header" style="background-color: #5577E5;">
+        <span>Inteligência</span>
+      </div>
+      <select class="attribute-base-select">
+        <option value="" disabled selected></option>
+      </select>
+      <table class="attribute-values">
+        <tr><td>Base:</td><td class="value-base">0</td></tr>
+        <tr><td>Bônus:</td><td class="value-bonus">0</td></tr>
+        <tr><td>Total:</td><td class="value-total">0</td></tr>
+        <tr><td>Modificador:</td><td class="value-modifier">0</td></tr>
+      </table>
+    </div>
+
+    <!-- Sabedoria -->
+    <div class="attribute-card" data-attribute="wisdom">
+      <div class="attribute-header" style="background-color: #A861E5;">
+        <span>Sabedoria</span>
+      </div>
+      <select class="attribute-base-select">
+        <option value="" disabled selected></option>
+      </select>
+      <table class="attribute-values">
+        <tr><td>Base:</td><td class="value-base">0</td></tr>
+        <tr><td>Bônus:</td><td class="value-bonus">0</td></tr>
+        <tr><td>Total:</td><td class="value-total">0</td></tr>
+        <tr><td>Modificador:</td><td class="value-modifier">0</td></tr>
+      </table>
+    </div>
+
+    <!-- Carisma -->
+    <div class="attribute-card" data-attribute="charisma">
+      <div class="attribute-header" style="background-color: #ED51D8;">
+        <span>Carisma</span>
+      </div>
+      <select class="attribute-base-select">
+        <option value="" disabled selected></option>
+      </select>
+      <table class="attribute-values">
+        <tr><td>Base:</td><td class="value-base">0</td></tr>
+        <tr><td>Bônus:</td><td class="value-bonus">0</td></tr>
+        <tr><td>Total:</td><td class="value-total">0</td></tr>
+        <tr><td>Modificador:</td><td class="value-modifier">0</td></tr>
+      </table>
+    </div>
+  </div>
+</div>

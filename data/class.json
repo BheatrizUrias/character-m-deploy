@@ -1,0 +1,510 @@
+[
+  {
+    "id": "barbarian",
+    "name": "Bárbaro",
+    "description": "Guerreiro feroz que canaliza sua fúria para obter força e resistência extraordinárias.",
+    "hit_dice": "d12",
+    "primary_ability": "Força",
+    "saving_throws": ["Força", "Constituição"],
+    "armor_proficiencies": ["Armaduras leves", "Armaduras médias", "Escudos"],
+    "weapon_proficiencies": ["Armas simples", "Armas marciais"],
+    "starting_equipment": {
+        "choices": [
+          {
+            "type": "Grupo de Armas Iniciais",
+            "quantity": 1,
+            "or_groups": [
+              {
+                "description": "Arma Marcial",
+                "items": [
+                  { "type": "Arma marcial", "options": ["Machado grande", "Qualquer arma marcial corpo-a-corpo"], "quantity": 1 }
+                ]
+              },
+              {
+                "description": "Duas Machadinhas ou Duas Armas Simples",
+                "items": [
+                  { "type": "Arma simples", "options": ["Machadinha", "Qualquer arma simples"], "quantity": 2 }
+                ]
+              }
+            ]
+          }
+        ],
+      "fixed": [
+        "Um pacote de explorador",
+        "Quatro azagaias"
+      ]
+    },
+    "features": [
+      {
+        "level": 1,
+        "name": "Fúria",
+        "description": "Você pode entrar em fúria como ação bônus, ganhando vantagem em testes de Força..."
+      }
+    ],
+    "subclasses": [
+      {
+        "id": "berserker",
+        "name": "Berserker",
+        "description": "Foca na fúria pura e simples",
+        "features": []
+      },
+      {
+        "id": "totem_warrior",
+        "name": "Guerreiro Totêmico",
+        "description": "Conectado com espíritos animais",
+        "features": []
+      }
+    ]
+  },
+  {
+    "id": "bard",
+    "name": "Bardo",
+    "description": "Usuário de magia e música com habilidades versáteis para inspirar aliados e confundir inimigos.",
+    "hit_dice": "d8",
+    "primary_ability": "Carisma",
+    "saving_throws": ["Destreza", "Carisma"],
+    "armor_proficiencies": ["Armaduras leves"],
+    "weapon_proficiencies": ["Armas simples", "Bestas leves", "Espadas longas", "Espadas curtas", "Rapiers"],
+    "starting_equipment": {
+      "choices": [
+        {
+          "type": "Arma",
+          "options": ["Rapier", "Espada longa", "Qualquer arma simples"],
+          "quantity": 1
+        },
+        {
+          "type": "Instrumento musical",
+          "options": ["Alaúde", "Harpa", "Violino"],
+          "quantity": 1
+        }
+      ],
+      "fixed": [
+        "Um pacote de diplomata",
+        "Um instrumento musical",
+        "Armadura de couro"
+      ]
+    },
+    "spellcasting": {
+      "ability": "Carisma",
+      "spells_known": 4,
+      "cantrips_known": 2
+    },
+    "features": [
+      {
+        "level": 1,
+        "name": "Inspiração Bardica",
+        "description": "Você pode inspirar outros através de palavras ou música..."
+      }
+    ]
+  },
+  {
+    "id": "cleric",
+    "name": "Clérigo",
+    "description": "Canalizador do poder divino que cura, protege e combate com magia sagrada.",
+    "hit_dice": "d8",
+    "primary_ability": "Sabedoria",
+    "saving_throws": ["Sabedoria", "Carisma"],
+    "armor_proficiencies": ["Armaduras leves", "Armaduras médias", "Escudos"],
+    "weapon_proficiencies": ["Armas simples"],
+    "starting_equipment": {
+      "choices": [
+        {
+          "type": "Arma",
+          "options": ["Maça", "Martelo de guerra (se proficiente)"],
+          "quantity": 1
+        },
+        {
+          "type": "Proteção",
+          "options": ["Escudo", "Qualquer arma simples"],
+          "quantity": 1
+        }
+      ],
+      "fixed": [
+        "Um símbolo sagrado",
+        "Um pacote de sacerdote",
+        "Armadura de couro batido"
+      ]
+    },
+    "spellcasting": {
+      "ability": "Sabedoria",
+      "prepared_spells": 3,
+      "cantrips_known": 3
+    },
+    "domains": [
+      {
+        "id": "life",
+        "name": "Vida",
+        "description": "Focado em cura e proteção",
+        "features": []
+      },
+      {
+        "id": "light",
+        "name": "Luz",
+        "description": "Domínio sobre luz e fogo",
+        "features": []
+      }
+    ]
+  },
+  {
+    "id": "druid",
+    "name": "Druida",
+    "description": "Guardião da natureza capaz de se transformar em animais e conjurar magias naturais.",
+    "hit_dice": "d8",
+    "primary_ability": "Sabedoria",
+    "saving_throws": ["Inteligência", "Sabedoria"],
+    "armor_proficiencies": ["Armaduras leves (sem metal)", "Armaduras médias (sem metal)", "Escudos (sem metal)"],
+    "weapon_proficiencies": ["Adagas", "Bordões", "Dardos", "Lanças", "Cimitarras", "Fundas", "Bastões"],
+    "starting_equipment": {
+      "choices": [
+        {
+          "type": "Proteção",
+          "options": ["Escudo de madeira", "Qualquer arma simples"],
+          "quantity": 1
+        },
+        {
+          "type": "Arma",
+          "options": ["Cimitarra", "Bastão simples"],
+          "quantity": 1
+        }
+      ],
+      "fixed": [
+        "Um foco druídico",
+        "Um pacote de explorador",
+        "Couro batido"
+      ]
+    },
+    "spellcasting": {
+      "ability": "Sabedoria",
+      "prepared_spells": 3,
+      "cantrips_known": 2
+    },
+    "wild_shapes": {
+      "cr_limit": 0.25,
+      "no_fly_or_swim": true
+    }
+  },
+  {
+    "id": "fighter",
+    "name": "Guerreiro",
+    "description": "Especialista em combate corpo a corpo, com alta resistência e habilidades com armas pesadas.",
+    "hit_dice": "d10",
+    "primary_ability": "Força ou Destreza",
+    "saving_throws": ["Força", "Constituição"],
+    "armor_proficiencies": ["Todas as armaduras", "Escudos"],
+    "weapon_proficiencies": ["Armas simples", "Armas marciais"],
+    "starting_equipment": {
+      "choices": [
+        {
+          "type": "Proteção",
+          "options": ["Corrente", "Escudo"],
+          "quantity": 1
+        },
+        {
+          "type": "Arma marcial",
+          "options": ["Espada longa", "Machado de batalha"],
+          "quantity": 1
+        },
+        {
+          "type": "Arma à distância",
+          "options": ["Arco longo", "Duas espadas curtas"],
+          "quantity": 1
+        }
+      ],
+      "fixed": [
+        "Um pacote de soldado",
+        "Um kit de explorador"
+      ]
+    },
+    "fighting_styles": [
+      {
+        "id": "archery",
+        "name": "Arquearia",
+        "description": "+2 para ataques à distância"
+      },
+      {
+        "id": "defense",
+        "name": "Defesa",
+        "description": "+1 na CA quando usando armadura"
+      }
+    ]
+  },
+  {
+    "id": "monk",
+    "name": "Monge",
+    "description": "Combatente ágil que canaliza energia espiritual para realizar golpes e movimentos sobrenaturais.",
+    "hit_dice": "d8",
+    "primary_ability": "Destreza e Sabedoria",
+    "saving_throws": ["Força", "Destreza"],
+    "armor_proficiencies": ["Nenhum"],
+    "weapon_proficiencies": ["Armas simples", "Espadas curtas"],
+    "starting_equipment": {
+      "choices": [
+        {
+          "type": "Arma simples",
+          "options": ["Bastão simples", "Espada curta"],
+          "quantity": 1
+        }
+      ],
+      "fixed": [
+        "Um pacote de explorador",
+        "10 dardos"
+      ]
+    },
+    "martial_arts": {
+      "die": "d4",
+      "description": "Pode usar Destreza para ataques desarmados"
+    }
+  },
+  {
+    "id": "paladin",
+    "name": "Paladino",
+    "description": "Guerreiro sagrado que mistura combate com magia divina para proteger e punir.",
+    "hit_dice": "d10",
+    "primary_ability": "Força e Carisma",
+    "saving_throws": ["Sabedoria", "Carisma"],
+    "armor_proficiencies": ["Todas as armaduras", "Escudos"],
+    "weapon_proficiencies": ["Armas simples", "Armas marciais"],
+    "starting_equipment": {
+      "choices": [
+        {
+          "type": "Arma marcial",
+          "options": ["Espada longa", "Qualquer arma marcial"],
+          "quantity": 1
+        },
+        {
+          "type": "Proteção",
+          "options": ["Escudo", "Qualquer arma simples"],
+          "quantity": 1
+        }
+      ],
+      "fixed": [
+        "Um símbolo sagrado",
+        "Um pacote de sacerdote",
+        "Corrente e um arco longo com 20 flechas"
+      ]
+    },
+    "spellcasting": {
+      "ability": "Carisma",
+      "prepared_spells": 3,
+      "cantrips_known": 0
+    },
+    "oaths": [
+      {
+        "id": "devotion",
+        "name": "Devoção",
+        "description": "Juramento de pureza e proteção",
+        "features": []
+      }
+    ]
+  },
+  {
+    "id": "ranger",
+    "name": "Patrulheiro",
+    "description": "Especialista em sobrevivência e combate à distância, conectado à natureza.",
+    "hit_dice": "d10",
+    "primary_ability": "Destreza e Sabedoria",
+    "saving_throws": ["Força", "Destreza"],
+    "armor_proficiencies": ["Armaduras leves", "Armaduras médias", "Escudos"],
+    "weapon_proficiencies": ["Armas simples", "Armas marciais"],
+    "starting_equipment": {
+    "choices": [
+      {
+        "type": "Defesa",
+        "quantity": 1,
+        "or_groups": [
+          {
+            "description": "Um Escudo",
+            "items": [
+              { "type": "Proteção", "options": ["Escudo"], "quantity": 1 }
+            ]
+          },
+          {
+            "description": "Duas Armas Simples",
+            "items": [
+              { "type": "Arma simples", "options": ["Qualquer arma simples"], "quantity": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Arma",
+        "quantity": 1,
+        "or_groups": [
+          {
+            "description": "Um Arco Longo e 20 flechas",
+            "items": [
+              { "type": "Arma à distância", "options": ["Arco longo"], "quantity": 1 },
+              { "type": "Munição", "options": ["20 Flechas"], "quantity": 1 }
+            ]
+          },
+          {
+            "description": "Duas Espadas Curtas",
+            "items": [
+              { "type": "Arma marcial", "options": ["Espada curta"], "quantity": 2 }
+            ]
+          }
+        ]
+      }
+    ],
+      "fixed": [
+        "Um pacote de explorador",
+        "Armadura de couro"
+      ]
+    },
+    "favored_enemies": ["Aberrações", "Bestas", "Dragões"],
+    "natural_explorer": ["Floresta", "Pântano", "Montanha"]
+  },
+  {
+    "id": "rogue",
+    "name": "Ladino",
+    "description": "Especialista em furtividade, armadilhas e ataques precisos contra pontos vitais.",
+    "hit_dice": "d8",
+    "primary_ability": "Destreza",
+    "saving_throws": ["Destreza", "Inteligência"],
+    "armor_proficiencies": ["Armaduras leves"],
+    "weapon_proficiencies": ["Armas simples", "Espadas curtas", "Arcos curtos", "Rapiers"],
+    "starting_equipment": {
+      "choices": [
+        {
+          "type": "Arma",
+          "options": ["Rapier", "Espada curta"],
+          "quantity": 1
+        },
+        {
+          "type": "Arma à distância",
+          "options": ["Arco curto", "Espada curta"],
+          "quantity": 1
+        }
+      ],
+      "fixed": [
+        "Um pacote de ladrão",
+        "Armadura de couro",
+        "Duas adagas",
+        "Ferramentas de ladrão"
+      ]
+    },
+    "expertise": {
+      "skills": 2,
+      "description": "Dobra o bônus de proficiência nas habilidades escolhidas"
+    }
+  },
+  {
+    "id": "sorcerer",
+    "name": "Feiticeiro",
+    "description": "Usuário de magia que canaliza poder mágico inato, com grande flexibilidade arcana.",
+    "hit_dice": "d6",
+    "primary_ability": "Carisma",
+    "saving_throws": ["Constituição", "Carisma"],
+    "armor_proficiencies": ["Nenhum"],
+    "weapon_proficiencies": ["Adagas", "Dardos", "Fundas", "Bordões", "Bestas leves"],
+    "starting_equipment": {
+      "choices": [
+        {
+          "type": "Arma",
+          "options": ["Bastão simples", "Adaga"],
+          "quantity": 1
+        },
+        {
+          "type": "Componentes",
+          "options": ["Bolsa de componentes", "Foco arcano"],
+          "quantity": 1
+        }
+      ],
+      "fixed": [
+        "Um pacote de explorador",
+        "Duas adagas"
+      ]
+    },
+    "spellcasting": {
+      "ability": "Carisma",
+      "spells_known": 2,
+      "cantrips_known": 4
+    },
+    "sorcerous_origins": [
+      {
+        "id": "draconic",
+        "name": "Linhagem Dracônica",
+        "description": "Seu poder vem de um ancestral dragão",
+        "features": []
+      }
+    ]
+  },
+  {
+    "id": "warlock",
+    "name": "Bruxo",
+    "description": "Conjurador que firma pactos com entidades poderosas para obter habilidades mágicas.",
+    "hit_dice": "d8",
+    "primary_ability": "Carisma",
+    "saving_throws": ["Sabedoria", "Carisma"],
+    "armor_proficiencies": ["Armaduras leves"],
+    "weapon_proficiencies": ["Armas simples"],
+    "starting_equipment": {
+      "choices": [
+        {
+          "type": "Arma",
+          "options": ["Besta leve", "Qualquer arma simples"],
+          "quantity": 1
+        },
+        {
+          "type": "Componentes",
+          "options": ["Bolsa de componentes", "Foco arcano"],
+          "quantity": 1
+        }
+      ],
+      "fixed": [
+        "Um pacote de estudioso",
+        "Armadura de couro",
+        "Duas adagas"
+      ]
+    },
+    "spellcasting": {
+      "ability": "Carisma",
+      "spells_known": 2,
+      "cantrips_known": 2
+    },
+    "pacts": [
+      {
+        "id": "fiend",
+        "name": "Pacto com o Diabo",
+        "description": "Seu poder vem de um demônio ou diabo",
+        "features": []
+      }
+    ]
+  },
+  {
+    "id": "wizard",
+    "name": "Mago",
+    "description": "Usuário de magia arcana que estuda grimórios para lançar feitiços poderosos.",
+    "hit_dice": "d6",
+    "primary_ability": "Inteligência",
+    "saving_throws": ["Inteligência", "Sabedoria"],
+    "armor_proficiencies": ["Nenhum"],
+    "weapon_proficiencies": ["Adagas", "Bordões", "Bestas leves", "Dardos"],
+    "starting_equipment": {
+      "choices": [
+        {
+          "type": "Arma",
+          "options": ["Bastão simples", "Adaga"],
+          "quantity": 1
+        },
+        {
+          "type": "Componentes",
+          "options": ["Bolsa de componentes", "Foco arcano"],
+          "quantity": 1
+        }
+      ],
+      "fixed": [
+        "Um pacote de estudioso",
+        "Um grimório"
+      ]
+    },
+    "spellcasting": {
+      "ability": "Inteligência",
+      "spells_prepared": 3,
+      "cantrips_known": 3
+    },
+    "arcane_recovery": {
+      "description": "Recupera slots de magia durante um descanso curto"
+    }
+  }
+]

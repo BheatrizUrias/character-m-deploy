@@ -1,0 +1,46 @@
+[
+  {
+    "simple_weapons": [
+      "Adaga",
+      "Maça",
+      "Clava",
+      "Machadinha",
+      "Lança",
+      "Martelo leve",
+      "Funda",
+      "Bordão",
+      "Dardo",
+      "Azagaia",
+      "Arco curto",
+      "Bestarda"
+    ],
+    "martial_weapons_melee": [
+      "Espada longa",
+      "Machado de batalha",
+      "Martelo de guerra",
+      "Rapier",
+      "Cimitarra",
+      "Espada curta"
+    ],
+    "martial_weapon_range": [
+      "Arco longo",
+      "Besta leve",
+      "Besta de mão"
+    ],
+    "armors": {
+      "light": [
+        "Couro",
+        "Couro batido",
+        "Gibão de peles"
+      ],
+      "medium": [
+        "Cota de malha",
+        "Couro cravejado",
+        "Escamas"
+      ],
+      "shields": [
+        "Escudo"
+      ]
+    }
+  }
+]
