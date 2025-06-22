@@ -16,7 +16,7 @@ export async function populateBackgroundSection(currentCharacter) {
   select.innerHTML = '<option value="" disabled selected>Selecione seu Antecedente</option>';
 
   try {
-    const response = await fetch('./Data/background.json');
+    const response = await fetch('./data/background.json');
     const backgrounds = await response.json();
 
     const languagesList = {
