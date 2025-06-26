@@ -1,10 +1,15 @@
 //Importando funções
 import {getCharacterFromURL} from "./sections-creation-edit/character_functions.js";
+import {update_sheet} from "./character_sheet_editor.js";
 // Script simples de impressão - equivalente ao Ctrl+P
 let currentCharacter;
 document.addEventListener('DOMContentLoaded', function() {
     //Inicia Personagem
      currentCharacter = getCharacterFromURL();
+
+    // popula ficha com dados do personagem
+    update_sheet(currentCharacter);
+
     // Cria o botão "Editar Ficha" (estilo semelhante ao de imprimir)
     const editButton = document.createElement('button');
     editButton.id = 'btn-editar';

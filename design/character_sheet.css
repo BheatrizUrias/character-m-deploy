@@ -1,0 +1,454 @@
+      /* Carregando Fontes */
+      @font-face {
+        font-family: "KCobraLetraBold";
+        src: url("./fonts/KCOBRALETRABOLD.TTF") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "KCobraLetra";
+        src: url("./fonts/KCOBRALETRAREGULAR.TTF") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Inter";
+        src: url("./fonts/Inter-VariableFont_opsz_wght.ttf")
+          format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #e5e5e5;
+        font-family: "Inter", sans-serif;
+        font-size: smaller;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .folha {
+        background-color: white; /* Alterado de orange para white */
+        width: 100%;
+        max-width: 1000px;
+        aspect-ratio: 210 / 297;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+        position: relative;
+        overflow: hidden;
+      }
+      .conteudo {
+        position: absolute;
+        top: 6.734%; /* 20px de 297mm = 6.734% */
+        left: 4.762%; /* 10px de 210mm = 4.762% */
+        right: 4.762%; /* 10px de 210mm = 4.762% */
+        bottom: 6.734%; /* 20px de 297mm = 6.734% */
+        border-radius: 1px;
+      }
+
+      .header {
+        border: 2px solid #000;
+        width: 100%;
+        height: 10.1%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0.67% 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .titulo-pagina {
+        font-family: "KCobraLetraBold", "sans-serif";
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 0.5%;
+        border-bottom: 1px solid #000;
+      }
+      .campos-personagem {
+        display: grid;
+        grid-template-columns: 2.5fr 1fr 1fr 1.2fr;
+        grid-template-rows: auto auto;
+        gap: 0.34% 1%;
+        align-items: center;
+        height: 100%;
+      }
+      .nome-personagem {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        display: flex;
+        flex-direction: column;
+        padding-right: 2%;
+      }
+      .nome-personagem .label {
+        font-size: 70%;
+        font-weight: bold;
+
+        margin-bottom: 0.5%;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .nome-personagem .valor {
+        font-weight: bold;
+
+        border-bottom: 1px solid #000000;
+        padding-bottom: 2%;
+      }
+
+      .campo {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 2%;
+      }
+
+      .campo .label {
+        font-size: 70%;
+        font-weight: bold;
+
+        margin-bottom: 1%;
+        text-transform: uppercase;
+      }
+
+      .campo .valor {
+        font-size: 80%;
+        color: #000;
+        font-weight: normal;
+        line-height: 1.2;
+      }
+
+      /* Container de conteúdo principal */
+      .conteudo-principal {
+        position: absolute;
+        top: 11.78%;
+        left: 0;
+        width: 100%;
+        height: 88.22%;
+        display: flex;
+        gap: 1.68%;
+      }
+
+      /* Colunas do conteúdo */
+      .coluna {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.68%; /* 0.5cm de espaçamento = 0.5/29.7 = 1.68% */
+        padding: 0;
+      }
+
+      /* Seções da primeira coluna */
+      .secao1 {
+        height: 68%;
+        flex-shrink: 0;
+        display: flex;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .habilidades {
+        background-color: #d3d3d3;
+        height: 100%;
+        width: 33%;
+        padding: 1.68%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.84%;
+        box-sizing: border-box;
+      }
+
+      .caixa-habilidade {
+        background-color: white;
+        border: 2px solid #000;
+        display: flex;
+        flex-direction: column;
+        padding: 0.67%;
+        flex: 1;
+        position: relative;
+      }
+
+      .titulo-habilidade {
+        font-family: "KCobraLetraBold", "sans-serif";
+        font-weight: bold;
+        font-size: 90%;
+        text-align: center;
+        padding-top: 0.5%;
+        flex: 1;
+      }
+
+      .quadrado-valor {
+        width: 60%; /* Largura do quadrado */
+        aspect-ratio: 1; /* Forma quadrada */
+        margin: 0 auto; /* Centralizado horizontalmente */
+        border: 2px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%; /* Espaço na base */
+      }
+
+          .alinha-centro {
+        align-items: center;
+        justify-content: center;
+      }
+
+
+      .modificador-habilidade {
+        position: absolute;
+        top: 30%; /* Posicionado acima do quadrado */
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .subsecao-direita {
+        height: 100%;
+        width: 67%;
+        padding: 1.68%; /* Mesmo padding da seção col3-1 */
+        display: flex;
+        flex-direction: column;
+        gap: 1.8%; /* Mesmo espaçamento da seção col3-1 */
+        box-sizing: border-box;
+      }
+
+      /* Seções da coluna 2 */
+      .secao-col2-1 {
+        background-color: #d3d3d3;
+        height: 40%;
+        flex-shrink: 0;
+        padding: 1.68%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.84%;
+        box-sizing: border-box;
+      }
+
+      .linha {
+        display: flex;
+        gap: 0.84%;
+        flex: 1;
+      }
+
+      .quadrado {
+        background-color: white;
+        border: 2px solid #000;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0.67%;
+        flex: 1;
+      }
+
+      .retangulo {
+        background-color: white;
+        border: 2px solid #000;
+        display: flex;
+        justify-content: center;
+        padding: 0.67%;
+        width: 100%;
+        flex-direction: column;
+        position: relative; /* Adicionado para posicionar o título */
+      }
+
+      .meio-quadrado {
+        background-color: white;
+        border: 2px solid #000;
+        display: flex;
+        justify-content: center;
+        padding: 0.67%;
+        flex: 1;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .secao-ataques-magias {
+        height: 26.25%;
+        padding: 1.35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #000;
+        flex-direction: column;
+        position: relative;
+      }
+      .tabela-ataques-magias {
+        width: 95%;
+        border-collapse: collapse;
+        position: absolute;
+        top: 1%;
+        padding: 2% 0;
+      }
+
+      .tabela-ataques-magias th {
+        color: rgb(136, 136, 136);
+        font-size: 80%;
+        font-weight: normal;
+        padding: 10;
+      }
+
+      .tabela-ataques-magias td {
+        font-size: 80%;
+        background-color: #d3d3d3;
+        background-clip: padding-box; /* Impede que o background vaze para as bordas */
+        border: 4px solid white; /* Linhas brancas entre as células */
+        padding: 2%;
+      }
+
+      /* Seções da coluna 3 */
+      .secao-col3-1 {
+        background-color: #d3d3d3; /* Cinza claro */
+        border: 1px solid #ccc; /* Borda cinza mais neutra */
+        height: 40%;
+        flex-shrink: 0;
+        padding: 1.68%; /* Padding proporcional */
+        display: flex;
+        flex-direction: column;
+        gap: 0.84%; /* 0.25cm de espaçamento entre caixas */
+      }
+
+      /* Caixas internas da seção 1 da coluna 3 */
+      .container-base {
+        background-color: white;
+        border: 2px solid #000;
+        display: flex;
+        padding: 0; /* Padding proporcional */
+        flex: 1; /* Cada caixa ocupa altura igual */
+        flex-direction: column;
+        position: relative;
+      }
+
+      .titulo {
+        font-size: 70%; /* Font-size proporcional */
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .secao-resistencia {
+        flex-direction: column;
+        padding: 0;
+        position: relative; /* Adicionado para posicionar o título */
+        border: 2px solid #000;
+        display: flex;
+        justify-content: center;
+        height: 25%; /* 25% do espaço disponível */
+      }
+
+      .divisao-dupla {
+        border: 2px solid #000;
+        height: 3.8%;
+        flex-shrink: 0;
+        padding: 0 0.67%;
+        display: flex;
+        align-items: center;
+      }
+
+      .divisao-dupla .valor {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid #000;
+        height: 100%;
+      }
+
+      .divisao-dupla .titulo {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+
+      .titulo-bottom-lock {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 0.5% 0;
+      }
+      .text-cinza-lock-top {
+        position: absolute;
+        top: 0;
+        margin: 2px 0 0 30px;
+        color: rgb(136, 136, 136);
+        font-size: 80%;
+        display:flex;
+        
+      }
+      .line{
+       border-bottom: 1px solid rgb(136, 136, 136);
+       color: #000;
+       font-size: 110%;
+      }
+
+      .lista {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        font-size: 90%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        margin-left: 10%;
+      }
+
+      .lista-check {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 70%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        margin-left: 5%;
+      }
+      .sub-container-duas-col {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0.67%;
+        box-sizing: border-box;
+      }
+
+      .moedas-coluna {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5%;
+        padding-right: 1%;
+      }
+
+      .equipamento-coluna {
+        width: 80%;
+        padding-left: 1%;
+        display: flex;
+        justify-content: center;
+      }
+      /* Responsividade mantendo proporções */
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 5px;
+        }
+      }

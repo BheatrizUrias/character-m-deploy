@@ -1,5 +1,5 @@
 import { bindClickNavigation } from "./components.js";
-import { createNewCharacter,saveCharacter, getCharacterFromURL} from "./sections-creation-edit/character_functions.js";
+import { createNewCharacter,saveCharacter, getCharacterFromURL,renameCharacter} from "./sections-creation-edit/character_functions.js";
 
 // Importar as funções específicas de cada seção
 import { populateClassSection } from "./sections-creation-edit/class_editor.js";
@@ -8,6 +8,7 @@ import { populateSpeciesSection } from "./sections-creation-edit/species_editor.
 import { populateAbilitiesSection } from "./sections-creation-edit/abilities_editor.js";
 import { populateEquipmentSection } from "./sections-creation-edit/equipment_editor.js";
 
+let menuOpen = false;
 let currentCharacter;
 
 // Cache para armazenar os conteúdos parciais já carregados
@@ -41,7 +42,7 @@ async function loadPartialContent(section) {
     'class': './partials/escolha-classe.html',
     'background': './partials/escolha-antecedente.html',
     'species': './partials/escolha-raca.html',
-    'abilities': './partials/escolha-atributos.html',
+    'abilities': './partials/escolha-habilidade.html',
     'equipment': './partials/escolha-equipamentos.html'
   };
 
@@ -97,6 +98,16 @@ document.addEventListener('DOMContentLoaded', () => {
   bindClickNavigation("#link-salvos", "saved_characters.html");
   bindClickNavigation("#link-login", "login.html");
 
+  // Menu toggle para mobile
+  const menuToggle = document.querySelector('.menu-toggle');
+  const buttonContainer = document.querySelector('.button-container');
+  
+  menuToggle?.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    buttonContainer.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  });
+
   // Navegação secundária - Listeners para cada botão
   const buttons = document.querySelectorAll('.secondary-nav .button-container .button');
   buttons.forEach(button => {
@@ -110,14 +121,35 @@ document.addEventListener('DOMContentLoaded', () => {
       // Carrega o conteúdo parcial correspondente
       const section = button.id.replace('-btn', '');
       loadPartialContent(section);
+
+      // Fecha o menu no mobile após seleção
+      if (menuOpen) {
+        buttonContainer.classList.remove('active');
+        menuToggle.classList.remove('active');
+        menuOpen = false;
+      }
     });
   });
-
   // Carrega a primeira seção por padrão
   if (buttons.length > 0) {
     buttons[0].classList.add('selected');
     loadPartialContent(buttons[0].id.replace('-btn', ''));
   }
+// Atualiza o nome do personagem conforme a digitação
+const nameInput = document.querySelector('.caixa-digitar-nome');
+if (nameInput) {
+  nameInput.value = currentCharacter.name;
+
+  nameInput.addEventListener('blur', (event) => {
+    let newName = event.target.value.trim();
+    if (newName === "") {
+      newName = "Novo Personagem";
+    }
+    currentCharacter = renameCharacter(currentCharacter, newName);
+  });
+}
+
+
  //Funções do botão de visualizar a ficha
 document.querySelector('.next-button').addEventListener('click', () => {
   if (currentCharacter) {
